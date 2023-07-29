@@ -1,0 +1,6 @@
+F:\CARPETAS VARIAS\2023\TFI\Penta2\DAL\bin\Debug\DAL.dll
+F:\CARPETAS VARIAS\2023\TFI\Penta2\DAL\bin\Debug\DAL.pdb
+F:\CARPETAS VARIAS\2023\TFI\Penta2\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+F:\CARPETAS VARIAS\2023\TFI\Penta2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\CARPETAS VARIAS\2023\TFI\Penta2\DAL\obj\Debug\DAL.dll
+F:\CARPETAS VARIAS\2023\TFI\Penta2\DAL\obj\Debug\DAL.pdb
