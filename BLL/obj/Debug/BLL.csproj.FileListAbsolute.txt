@@ -7,3 +7,12 @@ F:\CARPETAS VARIAS\2023\TFI\Penta2\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.ca
 F:\CARPETAS VARIAS\2023\TFI\Penta2\BLL\obj\Debug\BLL.csproj.CopyComplete
 F:\CARPETAS VARIAS\2023\TFI\Penta2\BLL\obj\Debug\BLL.dll
 F:\CARPETAS VARIAS\2023\TFI\Penta2\BLL\obj\Debug\BLL.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\bin\Debug\BLL.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\bin\Debug\BLL.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\bin\Debug\DAL.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\bin\Debug\DAL.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\obj\Debug\BLL.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\obj\Debug\BLL.pdb
