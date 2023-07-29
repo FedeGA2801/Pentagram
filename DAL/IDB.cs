@@ -17,6 +17,5 @@ namespace DAL
 
         string CreateBackup(string rutaDestino);
         void RestoreBackup(string rutaArchivo);
-        void lala();
     }
 }
