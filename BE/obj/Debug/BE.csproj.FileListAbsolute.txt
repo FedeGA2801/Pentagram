@@ -1,0 +1,6 @@
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BE\bin\Debug\BE.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BE\bin\Debug\BE.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BE\obj\Debug\BE.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BE\obj\Debug\BE.pdb

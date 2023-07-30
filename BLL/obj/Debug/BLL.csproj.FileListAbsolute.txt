@@ -16,3 +16,7 @@ F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\obj\Debug\BLL.csproj.CoreCompileInputs
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\obj\Debug\BLL.csproj.CopyComplete
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\obj\Debug\BLL.dll
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\obj\Debug\BLL.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\bin\Debug\BE.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\bin\Debug\Services.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\bin\Debug\BE.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\BLL\bin\Debug\Services.pdb

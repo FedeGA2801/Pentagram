@@ -154,3 +154,9 @@ F:\CARPETAS VARIAS\2023\TFI\Pentagram\Pentagram\obj\Debug\Pentagram.csproj.CoreC
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\Pentagram\obj\Debug\Pentagram.csproj.CopyComplete
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\Pentagram\obj\Debug\Pentagram.dll
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\Pentagram\obj\Debug\Pentagram.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\Pentagram\bin\BE.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\Pentagram\bin\DAL.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\Pentagram\bin\Services.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\Pentagram\bin\BE.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\Pentagram\bin\DAL.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\Pentagram\bin\Services.pdb

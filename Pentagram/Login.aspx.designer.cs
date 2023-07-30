@@ -24,6 +24,15 @@ namespace Pentagram.UI
         protected global::System.Web.UI.WebControls.TextBox username;
 
         /// <summary>
+        /// Control userreq.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator userreq;
+
+        /// <summary>
         /// Control password.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace Pentagram.UI
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox password;
+
+        /// <summary>
+        /// Control passreq.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator passreq;
 
         /// <summary>
         /// Control btnLogin.

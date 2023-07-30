@@ -4,3 +4,6 @@ F:\CARPETAS VARIAS\2023\TFI\Pentagram\Services\obj\Debug\Services.csproj.Assembl
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\Services\obj\Debug\Services.dll
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\Services\obj\Debug\Services.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\Services\bin\Debug\BE.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\Services\bin\Debug\BE.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\Services\obj\Debug\Services.csproj.CopyComplete

@@ -296,6 +296,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BE\BE.csproj">
+      <Project>{4C592CB0-235D-4758-AE9F-4CDB57812770}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{ec4aa88a-d3fb-41d0-8cf8-e0501051242b}</Project>
       <Name>BLL</Name>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BE;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -39,10 +40,10 @@ namespace Services
         /// Funcion para crear un hash en base a un string, una sal y una cantidad de iteraciones especifica.
         /// Utilizada en el login.
         /// </summary>
-        public static byte[] CrearHashPBKDF2(string input, byte[] salt, int iteraciones)
+        public static byte[] CrearHashPBKDF2(string input, byte[] sal, int itera)
         {
             // Genero Hash
-            Rfc2898DeriveBytes pbkdf2 = new Rfc2898DeriveBytes(input, salt, iteraciones);
+            Rfc2898DeriveBytes pbkdf2 = new Rfc2898DeriveBytes(input, sal, itera);
             return pbkdf2.GetBytes(HASH_SIZE);
         }
 

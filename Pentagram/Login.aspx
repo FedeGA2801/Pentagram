@@ -13,6 +13,11 @@
         .textbox {
             padding: 0.5rem 1.5rem;
         }
+
+        .error-message {
+            color: red;
+            font-style: italic;
+        }
     </style>
     <div>
         <br />
@@ -32,6 +37,7 @@
                                 </div>
                                 <div>
                                     <asp:TextBox class="form-control textbox" type="text" ID="username" placeholder="Usuario" runat="server" />
+                                    <asp:RequiredFieldValidator ID="userreq" runat="server" CssClass="form-text text-danger" ControlToValidate="username" ErrorMessage="El nombre de usuario es obligatorio"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
 
@@ -41,6 +47,7 @@
                                 </div>
                                 <div>
                                     <asp:TextBox class="form-control textbox" type="password" ID="password" placeholder="Contraseña" runat="server" />
+                                    <asp:RequiredFieldValidator ID="passreq" runat="server"  ControlToValidate="password" ErrorMessage="La contraseña es obligatoria" CssClass="form-text text-danger" SetFocusOnError="True"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
                         </div>

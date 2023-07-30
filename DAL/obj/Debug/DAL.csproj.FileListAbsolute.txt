@@ -8,3 +8,10 @@ F:\CARPETAS VARIAS\2023\TFI\Pentagram\DAL\obj\Debug\DAL.csproj.AssemblyReference
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\DAL\obj\Debug\DAL.dll
 F:\CARPETAS VARIAS\2023\TFI\Pentagram\DAL\obj\Debug\DAL.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\DAL\bin\Debug\DAL.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\DAL\bin\Debug\DAL.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\DAL\bin\Debug\BE.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\DAL\bin\Debug\Services.dll
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\DAL\bin\Debug\BE.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\DAL\bin\Debug\Services.pdb
+F:\CARPETAS VARIAS\2023\TFI\Pentagram\DAL\obj\Debug\DAL.csproj.CopyComplete

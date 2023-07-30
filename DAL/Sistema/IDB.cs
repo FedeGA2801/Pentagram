@@ -16,6 +16,6 @@ namespace DAL
         bool Update(string storedProcedure, List<SqlParameter> listaParams);
 
         string CreateBackup(string rutaDestino);
-        void RestoreBackup(string rutaArchivo);
+        void RestoreBackup(string rutaArchivos);
     }
 }

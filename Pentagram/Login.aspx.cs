@@ -1,6 +1,9 @@
-﻿using System;
+﻿using BE;
+using BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -16,7 +19,12 @@ namespace Pentagram.UI
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-
+            if(userreq.IsValid && passreq.IsValid)
+            {
+                Usuario user = new Usuario(username.Text, password.Text);
+                LoginBLL logbll = new LoginBLL();
+                logbll.Login(user);
+            }
         }
     }
 }

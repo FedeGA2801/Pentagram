@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BE;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,9 @@ namespace Pentagram
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //Si no estoy logeado, te mando al Login
+            if (!Sesion.ObtenerInstancia().Logeado())
+                Response.Redirect("Login.aspx");
         }
     }
 }
