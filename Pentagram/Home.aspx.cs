@@ -13,5 +13,10 @@ namespace Pentagram
         {
 
         }
+
+        protected void btnJoin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Login");
+        }
     }
 }

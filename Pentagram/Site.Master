@@ -3,6 +3,27 @@
 
 <!DOCTYPE html>
 
+<script type="text/javascript">
+        function ShowMessage(message, messagetype) {
+            var cssclass;
+            switch (messagetype) {
+                case 'Success':
+                    cssclass = 'alert-success'
+                    break;
+                case 'Error':
+                    cssclass = 'alert-danger'
+                    break;
+                case 'Warning':
+                    cssclass = 'alert-warning'
+                    break;
+                default:
+                    cssclass = 'alert-info'
+            }
+            $('#alert_container').append('<div id="alert_div" style="margin: 0 10%; -webkit-box-shadow: 3px 4px 6px #999;width:40%" class="alert fade in ' + cssclass + '"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>' + messagetype + '!</strong> <span>' + message + '</span></div>');
+            return false;
+        }
+</script>
+
 <html lang="es">
 <head runat="server">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -43,8 +64,8 @@
 
         <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img id="logo" href="~/Home" src="Images/PENTAGRAM.png" width="80" height="80">
+                <a class="navbar-brand" href="~/Home">
+                    <img id="logo" src="Images/PENTAGRAM.png" width="80" height="80">
                 </a>
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav">

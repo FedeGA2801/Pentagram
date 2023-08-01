@@ -1,5 +1,8 @@
 ﻿<%@ Page EnableEventValidation="false" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Pentagram.Home" %>
 
+<%@ Register Src="~/ModalError.ascx" TagPrefix="uc1" TagName="ModalError" %>
+
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
         <style>
         body {
@@ -14,8 +17,9 @@
             padding: 0.5rem 1.5rem;
         }
     </style>
+
     <div class="card bg-light bg-opacity-75 mt-3 mb-3 text-center" >
-        <h2 class="card-title mt-5 text-primary-emphasis">¡Bienvenidos a Pentagram!</h2>
+        <h2 class="card-title mt-5 text-primary-emphasis">¡Bienvenido a Pentagram!</h2>
         <h3 class="card-subtitle mb-2 text-primary">Donde la música cobra vida</h3>
         <div class="card-body">
             <div class="container text-center">
@@ -44,11 +48,8 @@
                         <p class="text-primary">Encuentra músicos talentosos y colabora en proyectos musicales increíbles.</p>
                     </div>
                 </div>
-                <a href="/Login" class="btn btn-primary btn-lg mt-5">Únete a nuestra comunidad musical</a>
+                <asp:Button runat="server" class="btn btn-primary btn-lg mt-5" ID="btnJoin" Text="Únete a nuestra comunidad musical" OnClick="btnJoin_Click" UseSubmitBehavior="False"></asp:Button>
             </div>
         </div>
     </div>
-
-
-
 </asp:Content>
