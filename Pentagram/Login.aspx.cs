@@ -25,22 +25,17 @@ namespace Pentagram.UI
         {
             try
             {
-                throw new Exception();
                 if (userreq.IsValid && passreq.IsValid)
                 {
-                    Usuario user = new Usuario(username.Text, password.Text);
+                    LoginUser user = new LoginUser(username.Text, password.Text);
                     LoginBLL logbll = new LoginBLL();
                     logbll.Login(user);
-
+                    Response.Redirect("MenuPrincipal");
                 }
             }
             catch (System.Exception ex)
             {
-                //label.Text = ex.toString();
-                //HERE IS WHERE YOU PUT THIS
-
-                string script = "var myModal = new bootstrap.Modal(document.getElementById('modal'), {  keyboard: false});myModal.toggle();";
-                ScriptManager.RegisterStartupScript(this, GetType(),"pop", script,    true);
+                (this.Master as SiteMaster).MostrarMensaje("Ocurrio un error, por favor reintentar", TipoEvento.Error);
             }
         }
     }

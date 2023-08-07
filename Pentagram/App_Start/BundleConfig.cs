@@ -12,6 +12,11 @@ namespace Pentagram
         // Para obtener más información sobre las uniones, visite https://go.microsoft.com/fwlink/?LinkID=303951
         public static void RegisterBundles(BundleCollection bundles)
         {
+            bundles.Add(new Bundle("~/bundles/Penta").Include(
+                    "~/Scripts/jquery-3.4.1.min.js",
+                    "~/Scripts/bootstrap.js"));
+
+
             bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
                             "~/Scripts/WebForms/WebForms.js",
                             "~/Scripts/WebForms/WebUIValidation.js",

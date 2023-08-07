@@ -1,4 +1,5 @@
 ﻿using BE;
+using BE.Permisos;
 using DAL;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace BLL
 {
     public class LoginBLL
     {
-        public bool Login(Usuario user)
+        public bool Login(LoginUser user)
         {
             //DigitoBLL digiBLL = new DigitoBLL();
             //digiBLL.RecalcularDigitos();
@@ -18,20 +19,37 @@ namespace BLL
             if (true)
             {
                 //Registro en bitacora el login
-                BitacoraBLL bitacoraBLL = new BitacoraBLL();
+                //BitacoraBLL bitacoraBLL = new BitacoraBLL();
                 LoginDAL logDAL = new LoginDAL();
                 //Gestiono login
-                bool exitoSeguridad = logDAL.ObtenerCredencialesCriptograficas(user);
-                if (exitoSeguridad)
+                Credenciales creds = logDAL.ObtenerCredencialesCriptograficas(user);
+                if (creds != null)
                 {
                     //userlog.setPasswordCifrada(contra);
                     //Voy con usuario y contraseña a buscar si los datos son correctos
-                    logDAL.LoginUsuario(user);
+                    //UsuarioBLL usuarioBLL = new UsuarioBLL();
+                    //usuarioBLL.AltaUsuario(user, creds);
+                    
+                    Usuario userfinal = logDAL.LoginUsuario(user, creds);
+                    if (userfinal != null)
+                    {
+                        //Cargo Permisos
+                        PermisoBLL permiBLL = new PermisoBLL();
+                        IList<Componente> lista = permiBLL.ObtenerPermisosUser(userfinal);
+                        if (lista.Count > 0)
+                            userfinal.CargarPermisos(lista);
+                        Sesion.ObtenerInstancia().IniciarSesion(userfinal);
+
+                        //falta idioma
+                    }
+                    
+                    return true;
                     /*
                     if (usuario != null)
                     {
                         //Seteo sesion
                         SesionUsuario.Login(usuario);
+                        
                         //Cargo Permisos
                         PermisosBLL permiBLL = new PermisosBLL();
                         IList<Componente> lista = permiBLL.ObtenerPermisosUser(SesionUsuario.GetInstance.Usuario);

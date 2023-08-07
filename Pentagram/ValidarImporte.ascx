@@ -1,4 +1,4 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ValidarImporte.ascx.cs" Inherits="Pentagram.ValidarImporte" %>
 <asp:TextBox class="form-control textbox" ID="txtImporte" runat="server"></asp:TextBox>
-<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="El importe debe ser numerico" ControlToValidate="txtImporte" ValidationExpression="^(?!0\d)([0-9]{1,}(,[0-9]{2}))$" Display="Dynamic"></asp:RegularExpressionValidator>
-<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="El importe es obligatorio" ControlToValidate="txtImporte"></asp:RequiredFieldValidator>
+<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" CssClass="form-text text-danger" ErrorMessage="El importe debe ser numerico" ControlToValidate="txtImporte" ValidationExpression="^(?!0\d)([0-9]{1,}(,[0-9]{2}))$" Display="Dynamic"></asp:RegularExpressionValidator>
+<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass="form-text text-danger" ErrorMessage="El importe es obligatorio" ControlToValidate="txtImporte"></asp:RequiredFieldValidator>

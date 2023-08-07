@@ -1,7 +1,6 @@
 ﻿<%@ Page EnableEventValidation="false" Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Pentagram.UI.Login" %>
 
 
-
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style>
         body {
@@ -24,35 +23,13 @@
 
 
 
-    <div id="modal" class="modal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
     <div>
         <br />
         <br />
         <br />
         <div class="container">
             <div class="d-flex justify-content-center h-100">
-                <div class="card">
+                <div class="card bg-dark text-light border-0 shadow rounded-3 my-5">
                     <div class="card-header">
                         <h3>Sign In</h3>
                     </div>
@@ -80,14 +57,13 @@
                         </div>
                         <div class="form-group">
                             <asp:Button runat="server" class="btn btn-primary col-md-12 text-center" ID="btnLogin" Text="Log in" OnClick="btnLogin_Click" UseSubmitBehavior="False"></asp:Button>
-                            <asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
                         </div>
                     </div>
                     <div class="card-footer">
-                        <div class="d-flex justify-content-center links">
+                        <div class="d-flex justify-content-center links text-light">
                             Don't have an account?<a href="#">Sign Up</a>
                         </div>
-                        <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center text-light">
                             <a href="#">Forgot your password?</a>
                         </div>
                     </div>
@@ -98,18 +74,4 @@
         <br />
         <br />
     </div>
-
-    <script type="text/javascript">  
-        $(document).ready(function () {
-            function miFuncion() {
-                $("#loginModal").modal('show');
-            };
-
-            function miFuncion() {
-                $("#loginModal").modal('hide');
-            };
-
-        });
-    </script>
-
 </asp:Content>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BE.Permisos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,17 +7,16 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    public class Usuario
+    public abstract class Usuario
     {
         private int _id { get; set; }
         private string _username { get; set; }
-        private string _password { get; set; }
-        private Credenciales _sec { get; set; }
+        private IList<Componente> _permisos { get; set; }
 
-        public Usuario(string username, string password)
+        public Usuario(int id, string username)
         {
+            _id = id;
             _username = username;
-            _password = password;
         }
 
         public int Id
@@ -25,9 +25,9 @@ namespace BE
             set { _id = value; }
         }
 
-        public void CargarCredencialesCriptograficas(byte[] password, byte[] sal, int ite)
+        public void CargarPermisos(IList<Componente> permisos)
         {
-            _sec = new Credenciales(password, sal, ite);
+            _permisos = permisos;
         }
 
         public string Username
@@ -36,24 +36,6 @@ namespace BE
             {
                 return _username;
             }
-        }
-
-        public string Password
-        {
-            get { return _password; }
-        }
-
-        public byte[] PasswordCifrada
-        {
-            get
-            {
-                return _sec.Password;
-            }
-        }
-
-        public Credenciales Credenciales
-        {
-            get { return _sec; }
         }
     }
 }

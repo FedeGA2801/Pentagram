@@ -19,9 +19,9 @@ namespace DAL
             _acceso = new SqlDb();
         }
 
-         
 
-        public bool ObtenerCredencialesCriptograficas(Usuario user)
+
+        public Credenciales ObtenerCredencialesCriptograficas(LoginUser user)
         {
             SqlParameter para1 = new SqlParameter("@username", user.Username);
             para1.SqlDbType = SqlDbType.NVarChar;
@@ -39,8 +39,8 @@ namespace DAL
                     byte[] sal = datos.Rows[0].Field<byte[]>("sal");
                     int iteraciones = datos.Rows[0].Field<int>("iteraciones");
                     byte[] contra = Services.Encriptacion.CrearHashPBKDF2(user.Password, sal, iteraciones);
-                    user.CargarCredencialesCriptograficas(contra, sal, iteraciones);
-                    return true;
+                    Credenciales cred = new Credenciales(contra, sal, iteraciones);
+                    return cred;
                 }
                 catch (Exception ex)
                 {
@@ -50,16 +50,16 @@ namespace DAL
             else
             {
                 //error
-                return false;
+                return null;
             }
         }
 
-        public void LoginUsuario(Usuario user)
+        public Usuario LoginUsuario(LoginUser user, Credenciales cred)
         {
             SqlParameter para1 = new SqlParameter("@username", user.Username);
-            para1.DbType = DbType.String;
-            SqlParameter para2 = new SqlParameter("@password", user.PasswordCifrada);
-            para2.DbType = DbType.Binary;
+            para1.SqlDbType = SqlDbType.NVarChar;
+            SqlParameter para2 = new SqlParameter("@password", cred.Password);
+            para2.SqlDbType = SqlDbType.VarBinary;
 
             var listaParams = new List<SqlParameter>
             {
@@ -73,12 +73,22 @@ namespace DAL
                 foreach (DataRow fila in datos.Rows)
                 {
                     int iduser = fila.Field<int>("idUsuario");
-                    user.Id = iduser;
+                    int idtipo = fila.Field<int>("idtipousuario");
+                    FactoryUsuarios factory = new FactoryUsuarios();
+                    switch (idtipo)
+                    {
+                        case 1:
+                            return factory.CrearUsuarioNormal(user.Username, iduser);
+                        case 2:
+                            return factory.CrearUsuarioNegocio(user.Username, iduser);
+                    }
                 }
+                return null;
             }
             else
             {
                 //error
+                return null;
             }
         }
     }

@@ -14,7 +14,17 @@ namespace Pentagram
         {
             //Si no estoy logeado, te mando al Login
             if (!Sesion.ObtenerInstancia().Logeado())
-                Response.Redirect("Login.aspx");
+                Response.Redirect("Login");
+        }
+
+        protected void btnSalas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnNegocios_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("NegociosMusica");
         }
     }
 }

@@ -41,13 +41,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlquilerSalas.cs" />
+    <Compile Include="LoginUser.cs" />
+    <Compile Include="Permisos\Componente.cs" />
     <Compile Include="Credenciales.cs" />
+    <Compile Include="Direccion.cs" />
     <Compile Include="EventoLog.cs" />
+    <Compile Include="FactoryNegocios.cs" />
+    <Compile Include="FactoryUsuarios.cs" />
     <Compile Include="IDigitoVerificador.cs" />
+    <Compile Include="Negocio.cs" />
+    <Compile Include="Permisos\Familia.cs" />
+    <Compile Include="Permisos\Patente.cs" />
+    <Compile Include="Permisos\TipoPermiso.cs" />
     <Compile Include="Sesion.cs" />
+    <Compile Include="TiendaMusica.cs" />
+    <Compile Include="Tienda\Categoria.cs" />
+    <Compile Include="Tienda\ICatalogo.cs" />
+    <Compile Include="Tienda\Producto.cs" />
     <Compile Include="TipoEvento.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioNegocio.cs" />
+    <Compile Include="UsuarioNormal.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

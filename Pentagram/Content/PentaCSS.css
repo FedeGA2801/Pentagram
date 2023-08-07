@@ -10,6 +10,8 @@
  * Bootstrap  v5.3.0 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+
+    Editado por fede
  */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
 
@@ -736,6 +738,14 @@ progress {
     border: var(--bs-border-width) solid var(--bs-border-color);
     max-width: 100%;
     height: auto;
+}
+
+.img-radius {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(43, 43, 43, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(43, 43, 43, 0.2);
+    object-fit: cover;
 }
 
 .figure {
@@ -4314,7 +4324,7 @@ textarea.form-control-lg {
 
 .navbar {
     --bs-navbar-padding-x: 0;
-    --bs-navbar-padding-y: 1.5rem;
+    --bs-navbar-padding-y: 0;
     --bs-navbar-color: rgba(0, 0, 0, 0.3);
     --bs-navbar-hover-color: #1a1a1a;
     --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
@@ -13577,3 +13587,29 @@ th {
 .card .h6 {
     color: inherit;
 }
+
+.treeview .list-group-item {
+    cursor: pointer
+}
+
+.treeview span.indent {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.treeview span.icon {
+    width: 12px;
+    margin-right: 5px
+}
+
+.treeview .node-disabled {
+    color: silver;
+    cursor: not-allowed
+}
+
+.node-treeview1 {
+}
+
+    .node-treeview1:not(.node-disabled):hover {
+        background-color: #F5F5F5;
+    }

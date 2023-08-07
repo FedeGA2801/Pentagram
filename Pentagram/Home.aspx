@@ -1,8 +1,5 @@
 ﻿<%@ Page EnableEventValidation="false" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Pentagram.Home" %>
 
-<%@ Register Src="~/ModalError.ascx" TagPrefix="uc1" TagName="ModalError" %>
-
-
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
         <style>
         body {

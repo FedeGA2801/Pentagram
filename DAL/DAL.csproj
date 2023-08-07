@@ -44,9 +44,13 @@
   <ItemGroup>
     <Compile Include="BitacoraDAL.cs" />
     <Compile Include="LoginDAL.cs" />
+    <Compile Include="NegocioDAL.cs" />
+    <Compile Include="PermisoDAL.cs" />
+    <Compile Include="ProductoDAL.cs" />
     <Compile Include="Sistema\IDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sistema\SqlDb.cs" />
+    <Compile Include="UsuarioDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BE\BE.csproj">
